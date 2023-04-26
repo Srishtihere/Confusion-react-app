@@ -1,10 +1,13 @@
+import Home from "./components/Home/home";
 import Navbar from "./components/navbar/navbar";
-
 
 function App() {
   return (
     <div className="App">
-    <Navbar/>
+      <div className="sticky-top">
+      <Navbar />
+      </div>
+      <Home />
     </div>
   );
 }

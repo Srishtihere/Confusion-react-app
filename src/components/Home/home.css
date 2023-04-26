@@ -1,0 +1,24 @@
+.socialmedia{
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8EE;
+}
+
+.populardish{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #FFF8EE;
+  width: 100%;
+}
+
+.popularDishesCorousal{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}

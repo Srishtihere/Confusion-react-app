@@ -7,29 +7,29 @@ import cart from "./cart.png";
 
 const Navbar = () => (
   <>
-    <div className="fixed-top">
-      <ul class="nav nav1">
-        <li class="nav-item w-25 d-flex justify-content-end">
-          <a class="nav-link" href="#">
+    <div>
+      <ul className="nav nav1">
+        <li className="nav-item w-25 d-flex justify-content-end">
+          <a className="nav-link" href="#">
             <img src={clocklogo} /> 7.30 AM - 9.30 PM
           </a>
         </li>
-        <li class="nav-item w-25">
-          <a class="nav-link" href="#">
+        <li className="nav-item w-25">
+          <a className="nav-link" href="#">
             <img src={telelogo} /> +880 1630 225 015
           </a>
         </li>
-        <li class="nav-item w-50 d-flex justify-content-end">
-          <a class="nav-link reg-link" href="#">
+        <li className="nav-item w-50 d-flex justify-content-end">
+          <a className="nav-link reg-link" href="#">
             REGISTER
           </a>
         </li>
       </ul>
 
-      <nav class="navbar navbar-expand-lg px-5">
-        <div class="container-fluid w-100">
+      <nav className="navbar navbar-expand-lg px-5">
+        <div className="container-fluid w-100">
           <div className="w-25 d-flex align-navbar">
-            <a class="navbar-brand" href="#">
+            <a className="navbar-brand" href="#">
               <img
                 src={logo}
                 width="95"
@@ -37,7 +37,7 @@ const Navbar = () => (
               />
             </a>
             <button
-              class="navbar-toggler"
+              className="navbar-toggler"
               type="button"
               data-bs-toggle="collapse"
               data-bs-target="#navbarSupportedContent"
@@ -45,28 +45,28 @@ const Navbar = () => (
               aria-expanded="false"
               aria-label="Toggle navigation"
             >
-              <span class="navbar-toggler-icon"></span>
+              <span className="navbar-toggler-icon"></span>
             </button>
           </div>
 
           <div
-            class="collapse navbar-collapse d-flex justify-content-evenly w-75"
+            className="collapse navbar-collapse d-flex justify-content-evenly w-75"
             id="navbarSupportedContent"
           >
-            <ul class="navbar-nav mb-lg-0 d-flex justify-content-evenly">
-              <li class="nav-item">
-                <a class="nav-link txt-deco" aria-current="page" href="#">
+            <ul className="navbar-nav mb-lg-0 d-flex justify-content-evenly">
+              <li className="nav-item">
+                <a className="nav-link txt-deco" aria-current="page" href="#">
                   HOME
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-deco" href="#">
+              <li className="nav-item">
+                <a className="nav-link txt-deco" href="#">
                   ABOUT
                 </a>
               </li>
-              <li class="nav-item">
+              <li className="nav-item">
                 <a
-                  class="nav-link txt-deco"
+                  className="nav-link txt-deco"
                   href="#"
                   role="button"
                   aria-expanded="false"
@@ -74,13 +74,13 @@ const Navbar = () => (
                   ITEMS
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-deco" href="#">
+              <li className="nav-item">
+                <a className="nav-link txt-deco" href="#">
                   PAGES
                 </a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link txt-deco" href="#">
+              <li className="nav-item">
+                <a className="nav-link txt-deco" href="#">
                   CONTACT
                 </a>
               </li>
@@ -100,7 +100,7 @@ const Navbar = () => (
 
             <form role="login">
               <button
-                class="btn btn-danger"
+                className="btn btn-danger"
                 type="button"
                 style={{
                   width: "90px",
