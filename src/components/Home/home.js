@@ -7,6 +7,10 @@ import fblogo from "./facebook.svg";
 import twtlogo from "./twitter.svg";
 import ldnlogo from "./linkedin.svg";
 import favDishList from "./populardishlist";
+import chefpic from "./image_richHealthy_1.png";
+import saladpic from "./image_richHealthy_2.png";
+import bigoffer1 from "./image_bigOffer_1.png";
+import bigoffer3 from "./image_bigOffer_3.png";
 
 const Home = () => (
   <>
@@ -139,7 +143,7 @@ const Home = () => (
               <img src={`${data.FavDishimg}`} className="card-img-top" />
               <div className="card-body">
                 <h5 className="card-title">{data.dishName}</h5>
-                <p className="card-text">$ {data.Price}</p>
+                <p className="card-text">${data.Price}</p>
                 <button
                   className="btn btn-danger"
                   type="button"
@@ -163,9 +167,118 @@ const Home = () => (
     ></div>
 
     {/* Rich&healthy */}
-    <div className="rich&healthy">
-      
+    <div className="richandhealthy">
+      <h3 style={{ color: "#2A435D" }}>RICH & HEALTHY</h3>
+      <div className="randh">
+        <img src={chefpic} className="m-2" width={"361px"} height={"600px"} />
+        <div className="randhcontent m-2">
+          <span
+            style={{
+              fontFamily: "sans-serif",
+              fontWeight: "700",
+              color: "#CC3333",
+              width: "402px",
+              fontSize: "25px",
+            }}
+          >
+            Highest quality artisangrains, proteins & seasonal ingredients
+          </span>
+          <br />
+          <p
+            style={{
+              fontFamily: "sans-serif",
+              fontWeight: "400",
+              color: "#2A435D",
+              width: "501px",
+              fontSize: "15px",
+            }}
+          >
+            Righteous indignation and dislike men who are so beguiled and
+            demoralized by the charms of pleasure of the moment, so blinded by
+            desires, that they cannot foresee.
+          </p>
+          <br />
+          <div className="randhPoints">
+            <ul className="me-3">
+              <li>Simple and easy to distinguish</li>
+              <li>Pleasure of the momentblinded desire</li>
+              <li>Able to do what we like best</li>
+              <br />
+              <button
+                className="btn btn-danger"
+                type="button"
+                style={{
+                  width: "130px",
+                  height: "35px",
+                  borderRadius: "10px",
+                }}
+              >
+                <b>ORDER NOW</b>
+              </button>
+            </ul>
+            <img src={saladpic} width={"350px"} height={"368px"} />
+          </div>
+        </div>
+      </div>
     </div>
+
+    {/* div block for spacing */}
+    <div
+      style={{ width: "100%", height: "40px", backgroundColor: "#FFF8EE" }}
+    ></div>
+
+    {/* Bigg Offers */}
+    <div
+      className="bigoffers d-flex flex-column justify-content-center align-items-center"
+      style={{ backgroundColor: "#FFF8EE" }}
+    >
+      <h3
+        style={{
+          fontFamily: "serif",
+          fontStyle: "italic",
+          fontWeight: "800",
+          fontSize: "50px",
+          color: "#CC3333",
+        }}
+      >
+        Bigg Offer
+      </h3>
+      <p
+        style={{
+          fontFamily: "serif",
+          fontWeight: "700",
+          fontSize: "20px",
+          color: "#2A435D",
+        }}
+      >
+        For in this week, take your food, buy your best one.
+      </p>
+      <div
+        id="carouselExampleSlidesOnly"
+        class="carousel slide carousel-fade w-75"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={bigoffer1} class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src={car2} class="d-block w-100" />
+          </div>
+          <div class="carousel-item">
+            <img src={bigoffer3} class="d-block w-100" />
+          </div>
+        </div>
+      </div>
+    </div>
+
+    {/* div block for spacing */}
+    <div
+      style={{ width: "100%", height: "40px", backgroundColor: "#FFF8EE" }}
+    ></div>
+
+    
+    
   </>
 );
 
